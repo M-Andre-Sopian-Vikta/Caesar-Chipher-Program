@@ -2,16 +2,10 @@ import string
 global abjad
 abjad = string.printable
 
-
-# abjad = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-# abjad berfungsi untuk menampung nilai abjad yang ada
-
 # fungsi enkripsi dengan parameter abjad
 def enkripsi(abjad):
     str = input("String : ") #input string yang akan di enkripsi
     key = int(input("Key : ")) #kunci untuk pergeseran abjad (enkripsi)
-
-    #str = str.lower() #string dikonversi ke huruf kecil semua
     result = '' #deklarasi variable result dengan nilai awal adalah kosong
 
     for char in str: #membuat perulangan untuk pergeseran abjad dari string
@@ -31,8 +25,6 @@ def enkripsi(abjad):
 def dekripsi(abjad):
     str = input("String Enkripsi : ") #input string yang akan di dekripsi
     key = int(input("Key : ")) #kunci untuk pergeseran abjad (dekripsi)
-
-    #str = str.lower() #string dikonversi ke huruf kecil semua
     result = '' #deklarasi variable result dengan nilai awal adalah kosong
 
     for char in str: #membuat perulangan untuk pergeseran abjad dari string
